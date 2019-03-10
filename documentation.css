@@ -1,0 +1,254 @@
+/* Freecodecamp - Technical Documentation Page  CSS - LiquidVessel */
+
+* {
+  box-sizing: border-box;
+  font-family: Lato, Calibri, sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --copper-red: #bf5448;
+  --p-brown: #644536;
+}
+
+#navbar {
+  background-color: white;
+  left: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  width: 310px;
+  z-index: 2;
+}
+
+.nav-link {
+  border-bottom: 2px solid var(--p-brown);
+  color: var(--copper-red);
+  font-family: MedievalSharp, Georgian, fantasy;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0.5em;
+}
+
+.nav-link:hover {
+  background-color: var(--p-brown);
+  color: #eef1bd;
+}
+
+ul {
+  padding-left: 0;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#CDC {
+  font-size: 1.8em;
+  padding-top: 0.6em;
+}
+
+#main-doc {
+  background-color: #eef1bd;
+  border-left: 2px solid var(--p-brown);
+  margin-left: 310px;
+  padding: 1.5em;
+}
+
+article {
+  max-width: 900px;
+  margin-bottom: 2em;
+}
+
+main header {
+  border-bottom: 5px solid var(--copper-red);
+  font-size: 1.9em;
+  margin-bottom: 0.5em;
+  max-width: 868px;
+}
+
+h4, h5 {
+  font-size: 1.5em;
+  margin-top: 1.7em;
+}
+
+main header, h4, h5 {
+  color: var(--p-brown);
+  font-family: MedievalSharp, Georgian, fantasy;
+  font-weight: 700;
+  margin-left: 1em;
+}
+
+p {
+  color: var(--p-brown);
+  padding: 0.3em 0;
+  text-align: justify;
+  text-align-last: left;
+}
+
+q {
+  color: var(--copper-red);
+  font-weight: bold;
+}
+
+br {
+  margin: 0.5em 0;
+}
+
+code {
+  background-color: var(--p-brown);
+  border: 5px double #c4a381;
+  color: #d9e8bd;
+  display: block;
+  font-family: Courier, monospace;
+  padding: 0.8em;
+  margin-bottom: 0.6em;
+}
+
+code q {
+  color: #c4a381;
+  font-family: Courier, monospace;
+  font-weight: 500;
+}
+
+code br {
+  padding: 0;
+  margin: 0;
+}
+
+main ul {
+  color: var(--copper-red);
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 1em;
+}
+
+#soufflette-ul {
+
+}
+
+#grelottine-ul {
+  font-family: MedievalSharp, Lato, fantasy;
+}
+
+table, td {
+  border: 2px solid #824b45;
+  border-collapse: separate;
+}
+
+table {
+  margin: 1em auto;
+}
+
+td {
+  color: var(--copper-red);
+  font-family: MedievalSharp, Georgian, fantasy;
+  font-weight: bold;
+  margin: 0.1em;
+  padding: 0.3em;
+}
+
+#perceval {
+  bottom: 2em;
+  left: 0;
+  position: fixed;
+  width: 310px;
+  object-fit: contain;
+}
+
+#perceval-img {
+  width: 100%;
+}
+
+.arrow-up {
+  height: 0;
+  width: 0;
+  border-right: 14.5px solid transparent;
+  border-bottom: 25px solid var(--copper-red);
+  border-left: 14.5px solid transparent;
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+#arrowup {
+  bottom: 5%;
+  position: fixed;
+  right: 4%;
+  visibility: hidden;
+}
+
+#arrowup:hover {
+  filter: invert(100%);
+}
+
+#up {
+  color: var(--copper-red);
+  text-align: center;
+  font-family: Impact;
+  font-size: 22px;
+  margin-left: 3px;
+  margin-top: -2px;
+}
+
+footer {
+  background-color: #c4a381;
+  bottom: 0;
+  font-size: 0.8em;
+  left: 0;
+  padding: 2px;
+  position:fixed;
+  width: 310px;
+  z-index: 1;
+}
+
+footer a {
+  color: var(--copper-red);
+  font-size: 1em;
+}
+
+
+
+@media (max-width: 800px) {
+  * {
+    font-size: 16px;
+  }
+
+  #navbar {
+    margin-top: 0;
+    position: static;
+    width: 100%;
+  }
+
+  .nav-link {
+    margin: auto;
+    padding-left: 10%;
+    white-space: nowrap;
+  }
+
+  #main-doc {
+    border-left: none;
+    margin-left: initial;
+  }
+
+  main header {
+    max-width: 86%;
+  }
+
+  article {
+    width: 90%;
+  }
+
+  #perceval {
+    visibility: hidden;
+  }
+
+  #arrowup {
+    visibility: visible;
+  }
+
+  footer {
+    text-align: center;
+    position: static;
+    width: 100%;
+  }
+}

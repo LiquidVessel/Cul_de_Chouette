@@ -1,0 +1,285 @@
+<!-- Freecodecamp - Technical Documentation Page - LiquidVessel -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="documentation.css" />
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Lato|Impact" rel="stylesheet">
+
+  <title>Technical Documentation Page</title>
+</head>
+
+
+<body>
+  <nav id="navbar">
+    <header><a href="#" id="CDC" class="nav-link">Cul de Chouette</a></header>
+      <ul id="navbar-list">
+        <li><a href="#Combinaisons" class="nav-link">Combinaisons</a></li>
+        <li><a href="#Combinaisons_Facultatives" class="nav-link">Combinaisons Facultatives</a></li>
+        <li><a href="#Néant" class="nav-link">Néant</a></li>
+        <li><a href="#Actions_et_Défis" class="nav-link">Actions et Défis</a></li>
+        <li><a href="#Bévue,_Boucliette_et_Achat" class="nav-link">Bévue, Boucliette et Achat</a></li>
+        <li><a href="#Victoire,_Défaite_et_Sloubi" class="nav-link">Victoire, Défaite et Sloubi</a></li>
+      </ul>
+</nav>
+
+  <main id="main-doc">
+    <section id="Cul_de_Chouette" class="main-section">
+      <header>Cul de Chouette</header>
+      <article>
+      <p>Le Cul de Chouette se joue avec 3 dés. Le but du jeu est de marquer <strong>343 points</strong> grâce aux différentes règles et combinaisons du jeu (le nombre 343 fait référence aux initiales du jeu : Cul De Chouette > C-D-C > 3-4-3)</p>
+      <h4>Démarrage</h4>
+      <p>Chaque joueur lance un dé, celui qui fait le plus petit score commence. S'il y a égalité, les joueurs à départager relancent.</p>
+      <h4>Déroulement de la partie</h4>
+      <p>Lors de son tour de jeu, le joueur lance d'abord deux de ses dés (les chouettes), puis le troisième dé (le cul). En fonction du résultat, on applique la règle correspondant à la combinaison formée par les 3 dés (peu importe l'ordre dans lequel ils ont été tirés).</p>
+      <code>Note : Si vous débutez, ne jouez qu'avec les règles suivantes : Chouette, Velute, Chouette Velute, Cul de Chouette, Suite, Néant, Grelottine, Sirop et Bévue.</code>
+    </article>
+    </section>
+
+    <section id="Combinaisons" class="main-section">
+      <header>Combinaisons</header>
+
+      <article>
+      <p>Les combinaisons de base du Cul de Chouette sont au nombre de 5 : Chouette, Velute, Chouette Velute, Cul de Chouette et Suite. Plusieurs combinaisons peuvent apparaître en même temps.</p>
+
+      <h5>La Chouette - 2 dés identiques</h5>
+      <p>La Chouette a pour valeur le chiffre des deux dés identiques. Le joueur qui a lancé les dés gagne les points correspondant au <strong>carré de la Chouette.</strong></p>
+      <p>Chouette de 1 = 1 pt, de 2 = 4 pts, de 3 = 9 pts, de 4 = 16 pts, de 5 = 25 pts, de 6 = 36 pts</p>
+      <code>ex : 4-1-4 = Chouette de 4 = 4<sup>2</sup> = 16 pts</code>
+
+      <h5>La Velute - Somme de 2 dés = 3e dé</h5>
+      <p>La Velute a pour valeur le chiffre du dé le plus élevé. Le joueur qui a lancé les dés gagne les points correspondant au <strong>double du carré de la Velute.</strong></p>
+      <p>Velute de 2 = 8 pts, de 3 = 18 pts, de 4 = 32 pts, de 5 = 50 pts, de 6 = 72 pts</p>
+      <code>ex : 1-4-5 = Velute de 5 = 5<sup>2</sup> * 2 = 50 pts</code>
+
+      <h5>La Chouette Velute</h5>
+      <p>En cas de Chouette Velute, n'importe qui peut frapper des mains et crier <q>Pas mou le caillou !</q> pour remporter les points de la Chouette Velute. La Chouette Velute vaut <strong>autant de points qu'une Velute.</strong></p>
+      <p>Si plusieurs joueurs sont à égalité lors de l'annonce, alors ils doivent soustraire de leur score les points de la Chouette Velute.</p>
+      <code>Note : Il n'existe que 3 possibilités de Chouette Velute.<br>1-1-2 (8 pts), 2-2-4 (32 pts) et 3-3-6 (72 pts)</code>
+
+      <h5>Le Cul de Chouette - 3 dés identiques</h5>
+      <p>Le Cul de Chouette a pour valeur le chiffre des trois dés identiques. Le joueur qui a lancé les dés gagne <strong>10 * (Cul de Chouette) + 40 points.</strong></p>
+      <p>Cul de Chouette de 1 = 50 pts, de 2 = 60 pts, de 3 = 70 pts, de 4 = 80 pts, de 5 = 90 pts, de 6 = 100 pts</p>
+      <code>ex : 4-4-4 = Cul de Chouette de 4 = 40 + 4*10 = 80 pts</code>
+
+      <h5>La Suite - suite de 3 chiffres</h5>
+      <p>Tous les joueurs doivent <strong>taper du poing sur la table</strong> et crier <q>Grelotte ça picotte !</q>. Le dernier joueur à le faire perd 10 points.</p>
+      <p>En cas d'égalité, les joueurs concernés se départagent en criant <q>Sans fin est la moisissure des bières bretonnes !</q>. S'il y a toujours égalité, alors les joueurs concernés se départagent en lançant chacun un dé, et celui qui fait le plus petit score perd les 10 points. S'il reste des joueurs qui ne se sont toujours pas départagés, ils recommencent mais pour perdre 20 points (puis 30, 40...)</p>
+      <code>ex : 1-2-3, qui est une Suite mais qui est également une Velute !</code>
+    </article>
+    </section>
+
+    <section id="Combinaisons_Facultatives" class="main-section">
+      <header>Combinaisons Facultatives</header>
+      <article>
+      <p>Il n'est pas nécéssaire de connaître les combinaisons suivantes pour jouer au Cul de Chouette, bien que le Bleu-Rouge reste une combinaison très populaire.</p>
+
+      <h5>La Soufflette - 4-2-1</h5>
+      <p>Un joueur qui réalise une Soufflette peut défier un autre joueur de son choix en criant <q>Soufflette !</q> ou <q>En garde ma mignonne !</q>. Le Soufflé a <strong>3 jets de dés pour réaliser lui aussi un 4-2-1,</strong> et peut conserver les dés qu'il souhaite entre chaque lancer. S'il réussit :</p>
+      <ul id="soufflette-ul">
+        <li>du premier coup, le Soufflé vole 50 pts au Souffleur,</li>
+        <li>du second coup, le Soufflé vole 40 pts au Souffleur,</li>
+        <li>du troisième coup, le Soufflé vole 30 pts au Souffleur.</li>
+        <li>En cas de victoire du Souffleur, c'est lui qui vole 30 points au Soufflé.</li>
+      </ul>
+
+      <h5>L'Artichette - 4-3-4</h5>
+      <p>Un joueur qui réalise une Artichette doit crier <q>Artichette !</q> pour remporter sa Chouette de 4 (16 points).</p>
+      <p>N'importe quel autre joueur peut aussi crier <q>Artichette !</q> en désignant l'Articheur du doigt pour <strong>lui faire perdre 16 points</strong> au lieu de les gagner.</p>
+      <p>En cas d'égalité, l'Articheur a priorité et garde ses 16 points.</p>
+
+      <h5>Le Bleu-Rouge - 3-4-3</h5>
+      <p>En cas de Bleu-Rouge, le lanceur remporte sa Chouette de 3 et peut relancer les dés. Tous les joueurs doivent alors <strong>parier sur le résultat de la somme des trois dés</strong> en annonçant <q>Je relance de X !</q> (où 3 ≤ X ≤ 18). La relance est gratuite et obligatoire.</p>
+      <p>Si un joueur remporte son pari, il gagne 36 points + le double de la valeur de la relance + les points de la combinaison éventuelle.</p>
+      <code>ex : Perceval relance de 15. Les dés donnent 5-5-5. Perceval gagne 36 + 15 * 2 + 90 (Cul de Chouette de 5) = 156 pts</code>
+    </article>
+    </section>
+
+    <section id="Néant" class="main-section">
+      <header>Néant</header>
+      <article>
+      <h5>Le Néant - Aucune des combinaisons précédentes</h5>
+      <p>En cas de Néant, le joueur qui a lancé les dés remporte une <strong>Grelottine</strong>. Un joueur ne peut avoir qu'une seule Grelottine à la fois. La Grelottine sert à lancer des défis Grelottine.</p>
+      <code>ex : 5-3-6</code>
+    </article>
+    </section>
+
+    <section id="Actions_et_Défis" class="main-section">
+      <header>Actions et Défis</header>
+      <article>
+      <p>Les deux règles incontournables du Cul de Chouette sont le Sirop (qui permet de relancer un dé) et le Défi Grelottine (qui permet de voler des points à un autre joueur).</p>
+      <h5>Le Défi Grelottine</h5>
+      <p>Le Défi Grelottine permet de <strong>voler des points à un autre joueur.</strong> Lors d'un défi, le Grelottin décide de la mise et de la combinaison que le défié doit réaliser.</p>
+
+      <p>Quand un joueur fait un Néant, il gagne une Grelottine (s'il n'en a pas déjà une). Entre deux tours, un joueur possédant une Grelottine peut en défier un autre qui possède aussi une Grelottine en criant <q>Grelottine !</q>. Si deux joueurs essaient de défier en même temps, c'est celui qui a le plus petit score qui a priorité et devient Grelottin.</p>
+      <p>Le Grelottin et le joueur défié ne peuvent pas avoir un score inférieur ou égal à 0. Si ces règles ne sont pas respectées mais que le joueur annonce quand même, il y a Bévue, le défi n'est pas lancé et le joueur conserve sa Grelottine.</p>
+      <p>Le Grelottin choisit une combinaison que le joueur défié doit réaliser : Chouette, Velute, Chouette Velute, Cul de Chouette ou Sirop-Grelot. La combinaison choisie détermine un coefficient utilisé pour calculer le maximum de la mise :</p>
+      <ul id="grelottine-ul">
+        <li>Chouette : 33%</li>
+        <li>Velute : 25%</li>
+        <li>Cul de Chouette : 12%</li>
+        <li>Chouette Velute : 6%</li>
+        <li>Sirop-Grelot : 3% (Cul de Chouette obligatoirement réalisé avec un Sirop)</li>
+      </ul>
+
+
+      <p>Le Grelottin décide de combien de points sera la mise, sachant qu'elle ne peut excéder le plus petit score des deux joueurs * le coefficient de la combinaison (arrondi au supérieur).</p>
+      <code>ex : Le Grelottin a 143 points, le joueur défié a 158 points. Le Grelottin défie l'autre joueur de faire une Velute. La mise sera au maximum 143 * 0.25 = 35.75 = 36 pts (arrondi au supérieur)</code>
+      <p>Le joueur défié a droit à deux lancers pour réaliser la combinaison demandée et peut conserver les dés de son choix entre ses lancers. Si le joueur défié réussit la combinaison, il vole au Grelottin le nombre de points décidés pendant la mise. S'il échoue, c'est le contraire et le Grelottin vole au joueur défié les points de la mise.</p>
+      <p>Dans tous les cas, le joueur défié remporte les points d'une éventuelle combinaison (toutes les autres règles s'appliquent lors de son lancer).</p>
+      <code>ex : Karadoc défie Perceval de faire un Cul de Chouette pour une mise de 16 pts.
+      <br>Perceval fait 2-2-1, il relance son 1 et fait un 3 à son deuxième lancer. Il décide de siroter son 3 et fait un 4.
+      <br>Perceval se fait donc voler 16 pts et perd 4 pts (Chouette de 2) à cause du Sirop raté.
+      <br>À noter que dans ce cas de figure (2-2-4), il y a également Chouette Velute et que les joueurs sont censés crier <q>Pas mou le caillou !</q>
+      </code>
+      <p>Une fois le défi terminé, les deux joueurs perdent leur Grelottine.</p>
+
+      <h5>Le Passe-Grelot (facultatif)</h5>
+      <p>Lorsqu'un joueur gagne un Défi Grelottine, il est immunisé à sa prochaine provocation en défi. Il peut alors désigner un autre joueur à qui sera transmis le Défi Grelottine en annonçant <q>Passe-Grelot !</q>. Le joueur désigné ne peut pas refuser le Défi Grelottine, même s'il dispose lui aussi d'un Passe-Grelot.</p>
+      <p>Le Passe-Grelot doit être annoncé avant que le Grelottin ne décide de la mise et de la combinaison. Le Passe-Grelot ne peut pas être utilisé contre un joueur dont le score est inférieur à 3. Si le Passe-Grelot ne respecte pas ces règles, alors il y a Bévue.</p>
+      <p>On ne peut avoir qu'un seul Passe-Grelot à la fois, comme la Grelottine. Une fois utilisé, le joueur perd son Passe-Grelot, même s'il l'a raté en commettant une Bévue.</p>
+
+      <h5>La Poulette (facultatif)</h5>
+      <p>Lorsqu'un joueur réalise un Néant pendant un Défi Grelottine, le Grelottin et lui peuvent crier <q>Elle est où la Poulette ?</q></p>
+      <p>Le premier joueur qui annonce la Poulette gagne 10 points. Si les deux joueurs annoncent la Poulette en même temps à égalité, ils perdent tous les deux les 10 points.</p>
+      <p>On ne peut appeler la Poulette qu'une seule fois pendant un même Défi Grelottine.</p>
+
+      <h5>Le Sirop (ou Sirotage)</h5>
+      <p>Le Sirop consiste à relancer un de ses dés en cas de Chouette pour tenter de faire un Cul de Chouette.</p>
+      <p>Après avoir lancé ses 3 dés, si le lanceur a fait une Chouette, il peut relancer son troisième dé et annonce alors <q>Je Sirote !</q> pour tenter de faire un Cul de Chouette. Si le Sirop réussit, le joueur remporte les points de son Cul de Chouette. S'il échoue, il perd les points de sa Chouette.</p>
+      <p>Lorsqu'un joueur annonce un Sirop, les autres joueurs peuvent miser sur le résultat du dé que le siroteur va lancer. La mise est de 5 points, le gain est de 25 points. Les chiffres doivent être annoncés de la façon suivante :</p>
+      <table>
+        <tr>
+          <td>I</td>
+          <td>Linotte</td>
+        </tr>
+        <tr>
+          <td>II</td>
+          <td>Alouette</td>
+        </tr>
+        <tr>
+          <td>III</td>
+          <td>Fauvette</td>
+        </tr>
+        <tr>
+          <td>IV</td>
+          <td>Mouette</td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>Bergeronnette</td>
+        </tr>
+        <tr>
+          <td>VI</td>
+          <td>Chouette</td>
+        </tr>
+      </table>
+      <code>ex : Lancelot fait un 1-3-3. Il sirote son 1 et Leodagan mise sur Alouette (2). Lancelot fait 2, il perd 9 pts (Chouette de 3) et Leodagan gagne 25 pts.</code>
+
+      <p>En cas de réussite, il faut annoncer <q>Sirop Gagnant !</q> pour gagner ses points. Si le gagnant n'annonce pas Sirop Gagnant, il ne gagne pas ses points (mais il n'y a pas de Bévue).</p>
+      <p>Si quelqu'un souhaiter miser sur la réussite du Sirop, il doit annoncer <q>Beau-Sirop</q> et non pas le nom de l'oiseau. Sinon, il s'agit d'une Bévue.</p>
+      <p>Ceux qui ne veulent pas miser doivent annoncer <q>Couche-Sirop</q> avant que le dé ne tombe. Sinon, il y a Bévue.</p>
+
+      <h5>L'Attrape-Oiseau (facultatif)</h5>
+      <p>Quand un joueur réalise une Chouette, un autre joueur peut siroter avant lui. Il doit alors annoncer <q>Attrape-Oiseau !</q> et se saisir du dé à siroter en levant le doigt. Si deux joueurs veulent tenter un Sirop et un Attrape-Oiseau (ou deux Attrapes-Oiseaux) en même temps, le premier qui saisit le dé est prioritaire.</p>
+      <p>Toutes les règles du Sirop (mise, beau-sirop, couche-sirop...) s'appliquent pendant un Attrape-Oiseau. Le joueur lance alors le dé pour tenter de faire Cul de Chouette, comme s'il était en train de siroter.</p>
+      <p>Si l'Attrape-Oiseau réussit, le joueur l'ayant tenté remporte les points du Cul de Chouette. S'il échoue, il perd les points de la Chouette.</p>
+      <p>Dans tous les cas, le joueur s'étant fait voler son Sirop remporte les points de sa Chouette.</p>
+      <code>ex : Guenièvre réalise une Chouette de 3 : 3-3-5. Demetra se saisit de son 5 et fait Attrape-Oiseau. Azénor mise sur Mouette (4) tandis que Guenièvre laisse filer avec un Couche-Sirop. Demetra relance son dé et fait un 1.
+      <br>Guenièvre gagne les 9 points de sa Chouette. Azénor perd les 5 points de sa mise. Demetra perd les 9 points de la Chouette.</code>
+
+      <h5>Le Contre-Sirop (facultatif)</h5>
+      <p>Si un Sirop ou un Attrape-Oiseau échoue, le premier joueur à crier <q>J'apprécie les fruits au sirop !</q> remporte un nombre de points en fonction du Cul de Chouette tenté par le siroteur. Le siroteur ne peut pas faire Contre-Sirop (sauf s'il n'y a que deux joueurs).</p>
+      <p>Le Contre-Sirop n'est valable que si le dé relancé ne fait ni Cul de Chouette, ni une mise réussie (Linotte, Alouette...) Un Contre-Sirop vaut le double du dixième du Cul de Chouette tenté : Contre-Sirop de 1 = 10 pts, de 2 = 12 pts, de 3 = 14 pts, de 4 = 16 pts, de 5 = 18 pts, de 6 = 20 pts</p>
+      <code>ex : Yvain fait un 5-5-4 et tente un Sirop de 5. Gauvain mise sur Alouette (2). Yvain rate son Sirop et fait 3. Gauvain fait Contre-Sirop.
+      <br>Yvain perd 25 points (Chouette de 5) pour avoir raté son Sirop. Gauvain perd 5 points de sa mise mais gagne 2 * 90 / 10 = 18 pts de Contre-Sirop.</code>
+      <p>En cas d'égalité, les joueurs concernés perdent les points du Contre-Sirop.</p>
+
+      <h5>Le Civet Siroté (facultatif)</h5>
+      <p>Quand un joueur rate un Sirop de 6, il remporte un Civet. Un joueur ne peut posséder qu'un seul Civet à la fois.</p>
+      <p>Pour rappel, il faut préalablement réaliser une Chouette de 6 pour tenter un Sirop de 6, et rater un Sirop de 6 fait perdre 36 points.</p>
+      <code>Note : en cas de réussite du Sirop, le joueur gagne 100 pts par Cul de Chouette de 6 mais ne remporte pas de Civet.</code>
+
+      <h5>Le Civet (facultatif)</h5>
+      <p>Un Civet permet de miser une partie de ses points en début de tour. Le joueur doit alors miser entre 1 et 102 points et parier sur une combinaison : Chouette, Velute, Chouette Velute, Suite, ou Cul de chouette. Dans le cas d'un Cul de chouette, il doit préciser avec ou sans Sirop. Le joueur annonce alors <q>Civet de X sur une Chouette ! (ou autre)</q> (où 1 ≤ X ≤ 102).</p>
+      <p>En cas de réussite, le joueur empoche sa mise et remporte les points de sa combinaison. En cas d'échec, le joueur perd sa mise mais remporte quand même les points d'une éventuelle combinaison. À la fin de son tour, le Civeteur perd son Civet.</p>
+      <code>ex : Arthur annonce un Civet de 82 sur Suite et fait un 3-4-5. Il gagne 82 points et annonce <q>Grelotte ça picote !</q> car il y a Suite.
+      <br>Note : Si la combinaison annoncée est Chouette, il faut faire Chouette et pas Cul de Chouette ni Chouette Velute.</code>
+
+      <h5>Le Civet Doublé (facultatif)</h5>
+      <p>Si un joueur utilise un Civet, un autre joueur possédant lui aussi un Civet peut l'utiliser pour doubler la mise du Civeteur. Il doit alors le désigner du doigt en annonçant "Civet doublé !"</p>
+      <code>Note : Cela n'affecte que la mise et pas la combinaison.</code>
+      <p>Plusieurs joueurs peuvent doubler un Civet en même temps, ce qui peut quadrupler, octupler (etc.) la mise.</p>
+      <code>ex : Merlin annonce un Civet de 65 sur Chouette. Arthur et Léodagan font Civet Doublé sur Merlin et multiplient sa mise par 4. Merlin fait une Velute de 2-4-6. Il remporte 72 points de Velute et perd 65*4 = 260 pts de Civet, pour un total de -188 pts.</code>
+    </article>
+    </section>
+
+    <section id="Bévue,_Boucliette_et_Achat" class="main-section">
+      <header>Bévue, Boucliette et Achat</header>
+      <article>
+      <h5>La Bévue</h5>
+      <p>Toute erreur commise ou manquement aux règles du jeu est une Bévue. Un joueur commettant une Bévue perd 10 points. Il est possible de commettre plusieurs Bévues en même temps ou pendant un même tour, auquel cas ces dernières s'additionnent.</p>
+      <p>Une mauvaise annonce, lancer les 3 dés en même temps, lancer les dés alors que ce n'est pas son tour, faire tomber les dés de la table... peuvent constituer une Bévue.</p>
+      <p>Selon le niveau des joueurs, il est préférable de se mettre d'accord en début de partie sur ce qui constitue une Bévue ou non.</p>
+      <code>Note : En cas de Suite, crier <q>Sans fin est la moisissure des bières bretonnes !</q> alors que tout le monde n'a pas encore crié <q>Grelotte ça picotte !</q> compte comme une mauvaise annonce et est de fait considéré comme une Bévue.</code>
+
+      <h5>La Boucliette (facultatif)</h5>
+      <p>Au début du jeu, chaque joueur dispose d’une boucliette, qui lui permet d’annuler un défi (pour lui ou pour un autre joueur). La boucliette s’utilise lorsque le défieur annonce la combinaison demandée et la mise. Attention : chaque joueur ne peut utiliser sa boucliette qu'une seule fois par partie.</p>
+
+      <h5>L'Achat </h5>
+      <p>Lorsqu'un joueur a lancé ses chouettes, un autre joueur peut acheter son cul avant qu'il ne soit lancé. Pour cela l'Acheteur doit dépenser 30 points (non-perçus par l'Acheté). Un joueur ayant moins de 30 points ne peut donc pas acheter (s'il le fait quand même c'est une Bévue). Pour cela l'Acheteur doit crier <q>J'achète !</q> en levant le doigt. Si deux joueurs achètent en même temps, ils se départagent avec un lancer de dé (plus petit score).</p>
+      <p>L'acheté ne gagnera donc que les points de son éventuelle Chouette. L'Acheteur peut lancer le cul qu'il a acheté. Si le lancer ne donne rien de mieux qu'une Chouette, l'Acheteur remporte également les points de la Chouette.</p>
+      <p>Il est interdit d'acheter sur une Chouette de 6, pendant une Soufflette ou un Civet.</p>
+      <p>Facultatif : Il est possible d'acheter pendant le premier lancer d'un Défi Grelottine. L'Acheteur se soumet alors lui aussi aux règles et à la mise du défi.</p>
+      <p>Facultatif : Il est possible d'acheter le dé d'un Sirop, qui devient alors un Attrape-Oiseau. L'Acheteur annonce simplement son achat et les joueurs remisent s'ils l'avaient déjà fait. Le Siroteur ne perd pas de points.</p>
+
+      <h5>Le Rachat (facultatif)</h5>
+      <p>N'importe qui peut racheter un cul tant qu'il a au moins 30 points. Il n'y a pas de limite au nombre de rachats sur un même cul, il faudra toujours dépenser 30 points pour l'avoir.</p>
+    </article>
+    </section>
+
+    <section id="Victoire,_Défaite_et_Sloubi" class="main-section">
+      <header>Victoire, Défaite et Sloubi</header>
+      <article>
+      <h4>Victoire</h4>
+      <p>On ne peut gagner la partie que pendant son tour de jeu. Lorsqu'un joueur dépasse les 343 points grâce à un défi ou une mise effectuée en dehors de son tour de jeu, son score est plafonné à 342.</p>
+
+      <h4>Score Négatif</h4>
+      <p>Si le score d'un joueur passe en dessous de -343 points, il est éjecté de la partie. </p>
+
+      <h4>La Doublette</h4>
+      <p>S'il y a beaucoup de joueurs dans la partie (6+), il est possible de former des équipes de deux. Les joueurs en équipe se positionnent alors face-à-face dans le cercle et partagent le même score.</p>
+
+      <h4>Le Chante-Sloubi (ou règle du handicap)</h4>
+      <p>Si quelqu'un souhaite intégrer une partie alors qu'elle a déjà commencé, le Chante-Sloubi sert à déterminer son score de départ. Pour déterminer le score du nouvel arrivant, il faut appliquer la formule suivante :</p>
+      <code>S = N(X1-X2) / 10<br>où S = Score de Sloubi, N = Nombre de tours joués, X1 = Plus haut score et X2 = Second plus haut score </code>
+      <p>Une fois son Score de Sloubi déterminé, le nouvel arrivant peut se soumettre au défi du Chante-Sloubi. S'il accepte, il doit chanter Sloubi jusqu'à atteindre le Sloubi S : <q>Sloubi un, sloubi deux, sloubi trois...</q></p>
+      <p>S'il y parvient sans commettre de faute, il peut multiplier son score par 1,5. S'il échoue ou refuse le défi, alors il commence la partie avec son score de base.</p>
+      <p>Le Sloubi de base ne peut pas excéder une valeur de 228. Au-delà, le joueur qui souhaite intégrer la partie ne peut pas chanter et doit attendre que la valeur du Sloubi diminue ou que la partie se termine.</p>
+      <p>Note : Un joueur éjecté de la partie ne peut pas la réintégrer via Chante-Sloubi.</p>
+    </article>
+
+    </section>
+  </main>
+
+  <div id="perceval">
+    <a href="https://kaamelott-soundboard.2ec0b4.fr/#son/c-est-les-autres-qui-sont-cons" target="_blank"><img src="https://raw.githubusercontent.com/LiquidVessel/FreeCodeCamp/master/perceval.jpg" alt="perceval-de-galles" id="perceval-img"></a>
+  </div>
+  <!-- Video youtube Perceval "https://youtu.be/uD3jc2hfYWM?t=604"-->
+
+
+  <a href="#"><div id="arrowup"><div class="arrow-up"></div><p id="up">UP</p></div></a>
+
+  <footer>
+    <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> Technical Documentation Page Challenge | by LiquidVessel
+  </footer>
+
+</body>
+
+
+</html>
